@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task2</title>
+</head>
+<body>
+    <script>
+    var stNames = ["Michael","John","Ste"];
+    var stScores = [399, 450, 310];
+    var total = 500;
+    for(var i = 0;i < stNames.length; i++){
+        var percentage = stScores[i]/total*100;
+        percentage = percentage.toFixed(2);
+        document.write("Score of "+stNames[i]+" is "+stScores[i]+". Percentage: "+percentage+"%<br>");
+    }
+    </script>
+</body>
+</html>

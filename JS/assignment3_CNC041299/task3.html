@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task3</title>
+</head>
+<body>
+    <script>
+    var colors = ["red","green","yellow", "blue", "orange"];
+    alert(colors);
+    var colorToAdd1 = prompt("Enter color to add in the begining of an array");
+    colors.unshift(colorToAdd1);
+    alert(colors);
+    colors.unshift("magenta","pink");
+    alert(colors); //two more colors added
+    colors.shift(); //delete first element from array
+    alert(colors);
+    colors.pop(); //delete last element
+    alert(colors);
+    var colorToAdd2 = prompt("Enter color to add at your desired position");
+    var colorPosition = +prompt("Enter position to add your color e.g 1, 2, 3");
+    colors.splice(colorPosition, 0, colorToAdd2);
+    alert(colors);
+    var colorsToDelete = +prompt("Enter how many color to delete");
+    var colorPos = +prompt("Enter from which position to delete");
+    colors.splice(colorPos, colorsToDelete);
+    alert(colors);
+
+
+
+    </script>
+</body>
+</html>

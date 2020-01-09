@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task11</title>
+</head>
+<body>
+    <!-- A = ["cake", "apple pie", "cookie", "chips", "patties"]
+    Write a program to enable "search by user input" in an array. After
+    searching, prompt the user whether the given item is found in the list
+    or not.<br> -->
+    
+<script>
+    A = ["cake", "apple pie", "cookie", "chips", "patties"];
+    toSearch = prompt("Welcome to our bakery! What is your order?");
+    var found = false;
+    for(var i = 0;i <= A.length; i++){
+        if(A[i]==toSearch){
+            found=true;
+            document.write(toSearch+ " is available at index "+ i);
+            break;    
+        }
+    }
+if(!found){
+ document.write("Sorry "+toSearch+" is not available!");
+
+}
+
+
+    </script>
+</body>
+</html> 
