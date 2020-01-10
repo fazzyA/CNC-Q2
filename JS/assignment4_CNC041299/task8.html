@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task8</title>
+</head>
+<body>
+
+<script>
+///method one
+var str = "hyderabad";
+str2 = str.replace("hyder","Islam");
+document.write("Method One<br>")
+document.write("City: "+ str);
+document.write("<br>");
+document.write("after replacement: "+str2);
+document.write("<br>");
+////method two
+var firstchar = str.indexOf("hyder");
+var replace = "hyder";
+var replaceTo = "Islam";
+document.write("<br>Method two<br>")
+document.write("City: "+str)
+document.write("<br>After replacement: "+str.slice(0,firstchar)+replaceTo+str.slice(firstchar+5));
+
+</script>
+</body>
+</html>

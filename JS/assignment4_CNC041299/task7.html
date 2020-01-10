@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task7</title>
+</head>
+<body>
+<script>
+var str = "the quick brown fox jumps on the road";
+var num = str.split(' ');
+var score=0;
+var arr =num.map((val)=>{
+    if(val=="the"){
+        score++;
+    }
+});
+document.write('original: '+str);
+document.write('<br>the occurence of "the" is: '+score);
+</script>
+</body>
+</html>
