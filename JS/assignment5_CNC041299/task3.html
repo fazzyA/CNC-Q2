@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task3 Palindrome</title>
+</head>
+<body>
+ Palindrome<hr>
+<script>
+var str = prompt("Enter string to check Palindrome!");
+function check(str) {
+    if(str == str.split("").reverse().join("")){
+      alert("its a palindrome!");
+  } else{
+    alert("its not a palindrome!");
+    }
+}
+check(str);
+</script>
+</body>
+</html>

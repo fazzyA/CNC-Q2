@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task11</title>
+</head>
+<body>
+    Write a program to calculate mean e.g 666 mean is 6+6+6/3<hr>
+<script>
+var num = prompt("enter number for mean")
+var arr = num.split('');
+
+//console.log(arr);
+var sum = 0;
+for(var i=0; i < arr.length ; i++){
+ sum = sum + parseInt(arr[i]);
+ console.log(sum);
+}
+var mean = sum / arr.length;
+document.write(`the mean of ${num} is: ${mean}<br>`);
+</script>
+</body>
+</html>

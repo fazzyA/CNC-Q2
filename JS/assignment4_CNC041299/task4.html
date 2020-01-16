@@ -11,8 +11,14 @@
 var email = prompt("Enter your email");
 var len = email.length;
 var ind=email.indexOf('@');
-if(ind > 0 && email[ind+1]){
-//valid
+var dotIndex=email.indexOf('.');
+var afterDot=dotIndex+1
+console.log(email[afterDot])
+if(email.indexOf("@") > 0 && ind !=0 && dotIndex > ind+1 && email[afterDot]!==undefined){
+        //valid
+        document.write('valid email');
+} else{
+    document.write('invalid email');
 }
 </script>
 </body>
