@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task4</title>
+</head>
+<body>
+    <script>
+
+var a = document.createElement("h2");
+var b = document.createTextNode("MARK SHEET");
+var c = a.appendChild(b);
+document.body.appendChild(a);
+//document.write(d + "<br />" + "<br />");
+
+var chemistry = +prompt("enter chemistry marks",98);
+var maths = +prompt("enter maths marks",98);
+var physics = +prompt("enter physics marks",98);
+
+var c = chemistry /100 * 100;
+var m = maths /100 * 100;
+ var p = physics /100 * 100;
+
+ document.write("<br>Chemistry : " + "Obtained marks " + chemistry + " percentage " + c + "%" + "<br />");
+ document.write("Maths : " + "Obtained marks " + maths + " percentage " + m + "%" + "<br />");
+ document.write("Physics : "  + "Obtained marks " + physics + " percentage " + p + "%" + "<br />");
+ var total_marks_obtained= chemistry + maths + physics;
+ var total = 300;
+ var total_per = total_marks_obtained / total * 100;
+ document.write("Total % = "+total_per + "%");
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task5</title>
+</head>
+<body>
+    <script>
+
+
+var userGuess = +prompt("guess number 1-10");
+var guess = 5;    //Math.floor(Math.random()*10+1);
+if(userGuess == guess){
+    alert("Your guess is correct!");
+} else if(userGuess+1 == guess){
+    alert("You are close enough");
+} else{
+    alert("Sorry Not a right guess.");
+}
+document.write(`correct guess was ${guess}`)
+
+</script>
+</body>
+</html>
