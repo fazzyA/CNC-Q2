@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task10 count vowel in string</title>
+</head>
+<body>
+<script>
+
+function vowelcount(str1)
+{
+  var all = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (all.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  
+  }
+  return vcount;
+}
+
+var count = vowelcount("The quick brown fox jumps over lazy dog");
+document.write(`The count of vowel is ${count}`);
+    
+    </script>
+</body>
+</html>

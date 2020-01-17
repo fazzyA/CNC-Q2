@@ -7,10 +7,26 @@
     <title>Task5 denominations</title>
 </head>
 <body>
+    <!-- 10  50  100 notes -->
 <script>
-var num = prompt("enter currency");
-var tens = num % 10;
-console.log(tens)
+var available = [100,50,10];    
+var num = +prompt("enter currency",470);
+// var arr = num.split('');
+//tens = num % tens
+var hundred = Math.floor(num / 100)
+
+var rem = num - hundred*100
+
+var fifty = Math.floor(rem/50) 
+
+var tens = Math.floor(num/10);
+rten = rem - 50;
+tens = Math.floor(rten / 10)
+
+document.write(`Hundreds = ${hundred}<br>`)
+document.write(`Fifty = ${fifty}<br>`)
+document.write(`Tens = ${tens}<br>`)
+
 </script>
 </body>
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task9 Add weeks</title>
+</head>
+<body>
+    <script>
+var rand = Math.floor(Math.random()*100 + 1);
+rand=2;
+for(var i=0;i < 3;i++){
+    input = +prompt("Guess the number between 1 - 100!");
+    if(input == rand){
+        alert("You won. play again");
+        var won = true
+        break;
+    } 
+    }
+    if(!won){
+        alert("Sorry you could not guess the number")
+    }
+
+
+
+ document.write(`<h3>Random Number was ${rand}</h3>`)
+
+</script>
+</body>
+</html>
